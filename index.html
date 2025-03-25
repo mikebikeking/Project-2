@@ -10,6 +10,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <script src="script.js"></script>
     <title>Final Project 2</title>
   </head>
   <body>
@@ -32,6 +33,24 @@
             <a href="#" class="nav__link login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
       </nav>
       <header>
@@ -402,28 +421,26 @@
                 <div class="plan__bottom">
                   <button class="plan__button">buy now</button>
                 </div>
+              </div>
+              <div class="plan">
+                <div class="plan__stripe"></div>
+                <div class="plan__top">
+                  <div class="plan__name">Enterprise</div>
+                  <div class="plan__price">$57.99</div>
+                  <div class="plan__duration">Monthly</div>
                 </div>
-                <div class="plan">
-                  <div class="plan__stripe"></div>
-                  <div class="plan__top">
-                    <div class="plan__name">Enterprise</div>
-                    <div class="plan__price">$57.99</div>
-                    <div class="plan__duration">Monthly</div>
-                  </div>
-                  <div class="plan__middle">
-                    <div class="plan__target">For Large Companies</div>
-                    <p class="plan__feature">90 Templates</p>
-                    <p class="plan__feature">27 Landing Pages</p>
-                    <p class="plan__feature">37 Internal Pages</p>
-                    <p class="plan__feature">Personal Assistance</p>
-                  </div>
-
-                  <div class="plan__bottom">
-                    <button class="plan__button">buy now</button>
-                  </div>
+                <div class="plan__middle">
+                  <div class="plan__target">For Large Companies</div>
+                  <p class="plan__feature">90 Templates</p>
+                  <p class="plan__feature">27 Landing Pages</p>
+                  <p class="plan__feature">37 Internal Pages</p>
+                  <p class="plan__feature">Personal Assistance</p>
                 </div>
 
-              
+                <div class="plan__bottom">
+                  <button class="plan__button">buy now</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -469,7 +486,8 @@
                     <img
                       src="./assets/photo-1494790108377-be9c29b29330.avif"
                       alt
-                      class="testimonial__img"/>
+                      class="testimonial__img"
+                    />
                     <div class="testimonial__detials">
                       <div class="testimonial__name">Charlotte Hale</div>
                       <div class="testimonial__role">Director, Delos Inc.</div>
